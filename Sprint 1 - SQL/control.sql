@@ -1,0 +1,22 @@
+CREATE DATABASE CONTROL;
+
+CREATE TABLE cliente(
+	id INT PRIMARY KEY,
+	name VARCHAR(45) NOT NULL
+);
+
+CREATE TABLE pago(
+	id INT PRIMARY KEY,
+	date TIMESTAMP,
+	amount DOUBLE(14,2),
+	cliente_id INT NOT NULL,
+	socio_id INT NOT NULL,
+	FOREIGN KEY(cliente_id) REFERENCES CONTROL.cliente(id),
+	FOREIGN KEY(socio_id) REFERENCES CONTROL.socio(id)
+);
+
+CREATE TABLE socio(
+	id INT PRIMARY KEY,
+	name VARCHAR(45) NOT NULL,
+	rol VARCHAR(45) NOT NULL
+);
