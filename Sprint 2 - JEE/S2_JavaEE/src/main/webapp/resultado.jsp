@@ -13,5 +13,6 @@
         <jsp:setProperty name="CalculosBean" property="n2" param="op2" />
         El resultado de la suma es: <%=CalculosBean.getSuma()%> <br>
         El resultado de la resta es: <%=CalculosBean.getResta()%> <br>
+        El resultado de la multiplicación es: <%=CalculosBean.getMultiplicacion()%> <br>
     </body>
 </html>
