@@ -2,7 +2,7 @@
 package edu.levelup.s2_javaee;
 
 import javax.ejb.Stateless;
-
+import java.math.*;
 
 @Stateless
 public class CalculosBean {
@@ -15,10 +15,22 @@ public class CalculosBean {
         else return false;
     }
     
-    public int getResultado(){
+    public int getSuma(){
         return n1 + n2;
     }
+    
+    public int getResta(){
+        return n1 - n2;
+    }
 
+    public int getMultiplicacion(){
+        return  n1 * n2;
+    }
+    
+    public double getDivision(){
+        return Math.round(((double)n1 / n2)*100.0)/100.0;
+    }
+    
     public int getN1() {
         return n1;
     }
