@@ -12,12 +12,10 @@
         <h2>José Mario Marroquín</h2>
         <h3>Ingrese los valores</h3>
         <form action="resultado.jsp">
-            Operador 1 <input type="text" name="op1"/>
+            Operador 1 <input type="number" min="1" name="op1"/>
             <br> 
-            Operador 2 <input type="text" name="op2"/>
+            Operador 2 <input type="number" min="1" name="op2"/>
             <input type="submit" value="Hacer operacion"/>
         </form>
-        
-        
     </body>
   </html>
