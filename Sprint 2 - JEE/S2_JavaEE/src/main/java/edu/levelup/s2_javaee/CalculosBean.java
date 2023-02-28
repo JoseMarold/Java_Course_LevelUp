@@ -15,8 +15,12 @@ public class CalculosBean {
         else return false;
     }
     
-    public int getResultado(){
+    public int getSuma(){
         return n1 + n2;
+    }
+    
+    public int getResta(){
+        return n1 - n2;
     }
 
     public int getN1() {
